@@ -1,0 +1,99 @@
+.contact-section {
+	position: relative;
+	overflow: hidden;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #050505;
+	color: white;
+	padding: 20px;
+}
+
+.contact-container {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	max-width: 600px;
+	padding: 2rem;
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 10px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.animated-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200%;
+	height: 200%;
+	z-index: 0;
+	background-image: repeating-linear-gradient(
+		45deg,
+		#63dc27 0px,
+		#63dc27 3px,
+		transparent 2px,
+		transparent 20px
+	);
+	opacity: 0.06;
+	animation: cyberScroll 40s linear infinite;
+	background-size: 200% 200%;
+	background-position: 0 0;
+	pointer-events: none;
+}
+
+.icon {
+	color: #63dc27;
+	font-size: 2rem;
+	margin-bottom: 10px;
+}
+
+.contact-info p {
+	font-size: 16px;
+	color: white;
+}
+
+.btn {
+	background-color: #63dc27 !important;
+	border-radius: 50px !important;
+	color: black !important;
+	font-size: 16px !important;
+	padding: 10px 30px;
+	border: none;
+	transition: all 0.3s ease;
+}
+
+.btn:hover {
+	background-color: black !important;
+	color: #63dc27 !important;
+}
+
+@keyframes cyberScroll {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 1000px 1000px;
+	}
+}
+
+/* --------- Responsive --------- */
+
+@media (max-width: 768px) {
+	.contact-container {
+		padding: 1rem;
+	}
+
+	.icon {
+		font-size: 1.5rem;
+	}
+
+	.contact-info p {
+		font-size: 14px;
+	}
+
+	.btn {
+		font-size: 14px !important;
+		padding: 8px 20px;
+	}
+}

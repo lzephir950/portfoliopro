@@ -1,0 +1,134 @@
+.sectionAbout {
+	background-color: black;
+}
+
+.skills-section {
+	max-width: 600px;
+	margin: 50px auto;
+	padding: 20px;
+	font-family: sans-serif;
+}
+
+.skills-section h2 {
+	text-align: center;
+	margin-bottom: 30px;
+	color: white;
+}
+
+.skills-section {
+	margin-left: 50px;
+}
+
+.skill {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.skill span {
+	min-width: 90px;
+	margin-right: 10px;
+	color: white;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.skill-bar {
+	flex: 1;
+	background-color: #e0e0e0;
+	height: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.skill-fill {
+	height: 100%;
+	width: 0;
+	background-color: #4caf50;
+	border-radius: 10px;
+	animation: grow 2s forwards;
+}
+
+/* Niveaux */
+.fill-html { animation: grow-html 2s forwards; }
+.fill-css { animation: grow-css 2s forwards; }
+.fill-js { animation: grow-js 2s forwards; }
+.fill-php { animation: grow-php 2s forwards; }
+.fill-java { animation: grow-java 2s forwards; }
+.fill-javafx { animation: grow-java 2s forwards; }
+
+/* Animations */
+@keyframes grow-html { to { width: 100%; } }
+@keyframes grow-css { to { width: 100%; } }
+@keyframes grow-js { to { width: 75%; } }
+@keyframes grow-php { to { width: 65%; } }
+@keyframes grow-java { to { width: 40%; } }
+@keyframes grow-javafx { to { width: 40%; } }
+
+.big2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-size: 7vw;
+	color: rgba(255, 255, 255, 0.1);
+	z-index: 0;
+	font-weight: 900;
+	text-align: center;
+	pointer-events: none;
+}
+
+.small2 {
+	position: relative;
+	font-size: 28px !important;
+	color: white;
+	font-weight: 900;
+	z-index: 1;
+	text-align: center;
+}
+
+.btn2 {
+	background-color: #63dc27 !important;
+	border-radius: 50px !important;
+	color: black !important;
+	font-size: 14px !important;
+	text-decoration: none;
+	padding: 10px 20px;
+	margin: 0 auto;
+}
+
+.btn2:hover {
+	background-color: black !important;
+	color: #63dc27 !important;
+}
+
+.image {
+	margin-bottom: 30px;
+	width: 80%;
+}
+
+@media (max-width: 768px) {
+	.skills-section {
+		margin-left: 0;
+		padding: 10px;
+	}
+
+	.small2 {
+		font-size: 20px !important;
+	}
+
+	.skill span {
+		font-size: 11px;
+	}
+
+	.btn2 {
+		font-size: 12px !important;
+		padding: 8px 16px;
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	.image {
+		width: 100%;
+	}
+}

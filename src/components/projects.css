@@ -1,0 +1,67 @@
+section {
+	background-color: #020102 !important;
+	color: white !important;
+}
+
+.project-card {
+	overflow: hidden;
+	border-radius: 8px;
+	position: relative;
+}
+
+.project-img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 8px;
+	transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-img {
+	transform: scale(1.05);
+}
+
+.overlay2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	z-index: 1;
+	padding: 10px;
+	text-align: center;
+	border-radius: 8px;
+}
+
+.project-card:hover .overlay2 {
+	opacity: 1;
+}
+
+.imgLogo {
+	width: 50px;
+	height: auto;
+}
+
+@media (max-width: 768px) {
+	.imgLogo {
+		width: 30px;
+	}
+
+	.overlay2 h4,
+	.overlay2 h5 {
+		font-size: 16px;
+	}
+
+	.overlay2 .btn {
+		font-size: 12px;
+		padding: 6px 12px;
+	}
+}
