@@ -1,4 +1,4 @@
-import photoImage from '../image/photo.jpeg';
+import photoImage from '../image/photo2.png';
 import './about.css';
 
 function About() {

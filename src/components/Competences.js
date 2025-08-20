@@ -1,5 +1,5 @@
 import './competences.css';
-import photoImage from '../image/cv.jpg';
+import photoImage from '../image/cv2.jpg';
 
 function Competences() {
 	return (
@@ -65,7 +65,7 @@ function Competences() {
 							className='img-fluid rounded image'
 						/>
 						<a
-							href='/cv.pdf'
+							href='/CV.pdf'
 							className='btn2 btn-primary d-inline-block mt-3'
 							download
 						>
